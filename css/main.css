@@ -54,6 +54,7 @@ background-color:#007bff!important
  margin: 4em 0;
  padding: 1em;
  position: relative;
+ height: 650px;
 }
 .about h1{
  color:#F97300;
@@ -145,8 +146,9 @@ background-color:#007bff!important
  border-bottom-left-radius: 0;
 }
 .contact-form{
- margin: 6em 0;
+ /* margin:5em 0; */
  position: relative;
+ height: 500px;
 }
 .contact-form h1{
  padding:2em 1px;
@@ -164,3 +166,30 @@ background-color:#007bff!important
  color: #888;
  font-size: 16px;
 }
+.social_media {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #F97300;
+  color: #fff;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} */
