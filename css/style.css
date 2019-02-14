@@ -1,172 +1,116 @@
 /* .fixed-top */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-html,h1,h2,h3,h4,h5,h6,a{
- font-family: "Raleway";
+html,h1, h2, h3, h4, h5, h6, a, q{
+  font-family: "Raleway";
 }
-.navbar{ background:#F97300;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;}
-.bg-dark{
-  background-color:#343a40!important
+/* navbar */
+.navbar{
+  background: #F97300;
 }
-.bg-primary{
-  background-color:#007bff!important
+.nav-link , .navbar-brand{
+  color: #f4f4f4;
+  cursor: pointer;
 }
-/*header style*/
+.nav-link{
+  margin-right: 1em ;
+}
+.nav-link:hover{
+  background: #f4f4f4;
+  color: #f97300;
+}
+.navbar-collapse{
+  justify-content:
+  flex-end;
+}
+.navbar-toggler{
+  background:#fff;
+}
+/* header */
 #header{
- background-image: url('../images/light.jpg');
- /*background-attachment: fixed;*/
- background-size: cover;
- background-position: center;
+  background-image: url('../images/light.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
-.overlay{
- position: absolute;
- min-height: 100%;
- min-width: 100%;
- left: 0;
- top: 0;
- /*background: rgba(244, 244, 244, 0.79);*/
-}
-.description{
+#header .description{
   position: absolute;
   top: 30%;
   margin: auto;
   padding: 2em;
 }
-.description h1{
- color:#F97300 ;
- font-size: 50px;
+#header .description h1{
+  color:#F97300 ;
+  font-size: 50px;
 }
-.description p{
- /*color:b;*/
- font-size: 20px;
- width: 50%;
- line-height: 1.5;
+#header .description p{
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
 }
-.about{
- margin: 4em 0;
- padding: 1em;
- position: relative;
+/* about me*/
+#about{
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
 }
-.about h1{
- color:#F97300;
- margin: 2em;
+#about img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%
 }
-.about img{
- height: 100%;
- width: 100%;
- border-radius: 50%
+#about .desc{
+  padding: 2em;
+  border-left: 2px solid  #F97300;
 }
-.about span{
- display: block;
- color: #888;
- position: absolute;
- left: 115px;
+#about .desc h3{
+  color: #F97300;
 }
-.about .desc{
- padding: 2em;
- border-left:4px solid #10828C;
-}
-.about .desc h3{
- color: #10828C;
-}
-.about .desc p{
- line-height:2;
- color:#888;
+#about .desc p{
+  line-height: 2;
+  color: black;
 }
 /*Portfolio*/
-.portfolio{
- margin: 4em 0;
- position: relative;
+#portfolio{
+  margin: 4em 0;
+  position: relative;
 }
-.portfolio h1{
- color:#F97300;
- margin: 2em;
+#portfolio h1{
+  color:#F97300;
+  margin: 2em;
 }
-.portfolio img{
+#portfolio img{
   height: 15rem;
   width: 100%;
   margin: 1em;
 }
-.blog{
- margin: 4em 0;
- position: relative;
+/* contact-form */
+#contact-form{
+  margin: 6em 0;
+  position: relative;
 }
-.blog h1{
- color:#F97300;
- margin: 2em;
+#contact-form h1{
+  padding:2em 1px;
+  color: #F97300;
 }
-.blog .card{
- box-shadow: 0 0 20px #ccc;
+#contact-form .right{
+  max-width: 600px;
 }
-.blog .card img{
- width: 100%;
- height: 12em;
+#contact-form .right .btn-secondary{
+  background:  #F97300;
+  color: #fff;
+  border:0;
 }
-.blog .card-title{
- color:#F97300;
-
+#contact-form .right .form-control::placeholder{
+  color: #888;
+  font-size: 16px;
 }
-.blog .card-body{
- padding: 1em;
-}
-.team{
- margin: 4em 0;
- position: relative;
-}
-.team h1{
- color:#F97300;
- margin: 2em;
-}
-.team .item{
- position: relative;
-}
-.team .des{
- background: #F97300;
- color: #fff;
- text-align: center;
- border-bottom-left-radius: 93%;
- transition:.3s ease-in-out;
-}
-.team .item:hover .des{
- height: 100%;
- background:#f973007d;
- position: absolute;
- width: 89%;
- padding: 5em;
- top: 0;
- border-bottom-left-radius: 0;
-}
-.contact-form{
- margin: 6em 0;
- position: relative;
-}
-.contact-form h1{
- padding:2em 1px;
- color: #F97300;
-}
-.contact-form .right{
- max-width: 600px;
-}
-.contact-form .right .btn-secondary{
- background:  #F97300;
- color: #fff;
- border:0;
-}
-.contact-form .right .form-control::placeholder{
- color: #888;
- font-size: 16px;
-}
+/* footer */
 #footer{
   display: flex;
   justify-content: space-around;
   width: 100%;
   padding: 30px;
   background: #F97300;
-  /*color: white;*/
 }
 #footer a {
   justify-content: space-between;
@@ -174,5 +118,5 @@ html,h1,h2,h3,h4,h5,h6,a{
   font-size: 30px;
 }
 #footer a:hover {
-  color: black;
+  color: lightgrey;
 }
